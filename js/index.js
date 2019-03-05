@@ -37,8 +37,34 @@ const pTags = document.querySelectorAll("p");
 
 for (let i = 0; i < pTags.length; i++) {
   let p = pTags[i];
-  console.log(p);
   p.addEventListener("mouseover", function(e) {
     p.style.color = "#89cff0";
   });
 }
+
+// Event Listener : 5
+
+const textContent = document.querySelector(".text-content");
+const textContentH2 = textContent.querySelector("h2");
+
+textContentH2.addEventListener("wheel", function() {
+  TweenMax.from(textContentH2, 3, { x: 450, opacity: 0, scale: 0.5 });
+});
+
+// Event Listener : 6
+const btns = document.querySelectorAll(".btn");
+
+for (let i = 0; i < btns.length; i++) {
+  let btn = btns[i];
+
+  btn.addEventListener("click", function() {
+    if (btn !== "clicked") {
+      btn.classList.toggle("clicked");
+      btn.textContent = "Thanks for Signing Up!";
+    } else {
+      btn.classList.remove("clicked");
+    }
+  });
+}
+
+// Event Listener : 7

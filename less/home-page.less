@@ -1,10 +1,4 @@
 .home {
-  #ball {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-  }
-
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
@@ -111,6 +105,18 @@
 
       .btn {
         .button-creator(200px, 45px, @button-bg, @white, 1.8rem);
+
+        &:hover {
+        }
+      }
+
+      .clicked {
+        width: 250px;
+        height: 150px;
+        padding: 25px;
+        background-color: #89cff0;
+        color: white;
+        font-size: 25px;
       }
     }
   }
