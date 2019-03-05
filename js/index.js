@@ -91,3 +91,18 @@ window.addEventListener("blur", pause);
 window.addEventListener("focus", play);
 
 // Event Listener : 9
+const contentDestination = document.querySelector(".content-destination");
+
+contentDestination.addEventListener("keydown", function() {
+  contentDestination.style.backgroundColor = "green";
+});
+
+// Event Listener : 10
+const wholePage = document.querySelector("html");
+
+console.log(wholePage);
+
+wholePage.addEventListener("dblclick", function(event) {
+  wholePage.style.color = "yellow";
+  event.stopPropagation();
+});
