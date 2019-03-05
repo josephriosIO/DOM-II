@@ -136,6 +136,11 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+html .paused,
+body .paused {
+  background: red;
+  color: #555;
+}
 h1,
 h2,
 h3,

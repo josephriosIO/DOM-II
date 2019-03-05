@@ -68,3 +68,26 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 // Event Listener : 7
+const destination = document.querySelector(".destination");
+const destinationH4 = destination.querySelector("h4");
+
+destinationH4.addEventListener("click", function() {
+  destinationH4.textContent = "HELLO";
+});
+
+// Event Listener : 8
+const leavingPage = document.querySelector(".log");
+
+function pause() {
+  document.body.classList.add("paused");
+}
+
+function play() {
+  document.body.classList.remove("paused");
+  log.textContent = "This document has focus.";
+}
+
+window.addEventListener("blur", pause);
+window.addEventListener("focus", play);
+
+// Event Listener : 9
