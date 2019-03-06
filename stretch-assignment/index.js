@@ -22,4 +22,16 @@ for (let i = 0; i < blocks.length; i++) {
     counter = 0;
     clearInterval(stop);
   });
+
+  block.addEventListener("touchstart", function(event) {
+    console.log("inside mouse down");
+    stop = setInterval(function() {
+      block.style.transform = `translate(${counter}px,0)`;
+      counter++;
+    }, 0);
+  });
+  window.addEventListener("touchend", function() {
+    counter = 0;
+    clearInterval(stop);
+  });
 }
