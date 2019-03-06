@@ -1,10 +1,21 @@
 body {
   display: flex;
   /*justify-content: center;*/
+  flex-flow: column;
+}
+
+.text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: black;
+  height: 150px;
 }
 
 .blocks {
-  margin-top: 5%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
 }
