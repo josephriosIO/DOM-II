@@ -9,6 +9,9 @@ body {
   flex-direction: column;
 }
 
+.move {
+  padding-left: 500px;
+}
 .block {
   width: 100px;
   height: 100px;

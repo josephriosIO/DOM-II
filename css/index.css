@@ -134,14 +134,19 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+html .paused,
+body .paused {
+  background: red;
+  color: #555;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -346,7 +351,11 @@ img {
     width: 100%;
   }
 }
-.home .content-pick .destination .btn:hover {
-  background: #FFFFFF;
-  color: #17A2B8;
+.home .content-pick .destination .clicked {
+  width: 250px;
+  height: 150px;
+  padding: 25px;
+  background-color: #89cff0;
+  color: white;
+  font-size: 25px;
 }
